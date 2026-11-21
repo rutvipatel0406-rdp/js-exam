@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form id="myForm">
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Mobile Number</label>
+            <input type="tel" id="number" placeholder="Enter mobile number"
+                   pattern="[0-9]{10}" maxlength="10" required>
+
+            <button type="submit" id="submitBtn">Submit</button>
+
+        </form>
+
+        <h2>Submitted Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="recordList"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
